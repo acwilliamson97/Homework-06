@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Weather Dashboard</title>   
+</head>
+<body>
+    <header><h1>Weather Dashboard</h1></header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2>Search for a City or Zip Code!</h2>
+                <input type="text" placeholder="City"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
+                <input type="text" placeholder="Zip Code"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2>City: <span id="city"></span></h2>
+                <h2>Main Weather: <span id="main_weather"></span></h2>
+                <h2>Description: <span id="description_weather"></span></h2>
+                <img id="weather_image" src="">
+                <h2>Temperature: <span id="temperature"></span></h2>
+                    <button id="converttoCelsius">Celsius</button>
+                    <button id="convertToFahrenheit">Fahrenheit</button>
+                <h2>Pressure: <span id="pressure"></span></h2>
+                <h2>Humidity: <span id="humidity"></span></h2>
+            </div>
+        </div>
+    </div>
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
