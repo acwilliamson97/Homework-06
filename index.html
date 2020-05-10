@@ -14,27 +14,69 @@
     <header><h1>Weather Dashboard</h1></header>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2>Search for a City or Zip Code!</h2>
-                <input type="text" placeholder="City"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
-                <input type="text" placeholder="Zip Code"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
+            <div class="col-sm-4">
+                <h2>Search for a City!</h2>
+                <input type="text" id="search" placeholder="Search for a City!"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
+                <div class="city-list"></div>
             </div>
-        </div>
+
+            <div class="col-sm-8">
+                <h1 class="city-name"></h1>
+                <div class="city"></div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
+                <div class="temp"></div>
+                <div class="uv"></div>
+            </div>
+
+            <br>
+
+            <div class="row forecast">
+                <h2 id="5-day-forecast">5-Day Forecast:</h2>
+                    <div class="col text-white">
+                    <div class="card bg-primary" ">
+                        <p id="date1" class="mb-2"></p>
+                        <img id="icon4" class="mr-auto" src="http://openweathermap.org/img/w/01n.png" alt="weather icon">
+                        <p>Temp: <span id="temp1"></span>&deg; F</p>
+                        <p>Humidity: <span id="humidity1"></span>%</p>
+                    </div>
+                </div>
+                <div class="col text-white">
+                    <div class="card bg-primary">
+                        <p id="date2" class="mb-2"></p>
+                        <img id="icon12" class="mr-auto" src="http://openweathermap.org/img/w/01n.png" alt="weather icon">
+                        <p>Temp: <span id="temp2"></span>&deg; F</p>
+                        <p>Humidity: <span id="humidity2"></span>%</p>
+                    </div>
+                </div>
+                <div class="col text-white">
+                    <div class="card bg-primary">
+                        <p id="date3" class="mb-2"></p>
+                        <img id="icon20" class="mr-auto" src="http://openweathermap.org/img/w/01n.png" alt="weather icon">
+                        <p>Temp: <span id="temp3"></span>&deg; F</p>
+                        <p>Humidity: <span id="humidity3"></span>%</p>
+                    </div>
+                </div>
+                <div class="col text-white">
+                    <div class="card bg-primary">
+                        <p id="date4" class="mb-2"></p>
+                        <img id="icon28" class="mr-auto" src="http://openweathermap.org/img/w/01n.png" alt="weather icon">
+                        <p>Temp: <span id="temp4"></span>&deg; F</p>
+                        <p>Humidity: <span id="humidity4"></span>%</p>
+                    </div>
+                </div>
+                <div class="col text-white">
+                    <div class="card bg-primary" >
+                        <p id="date5" class="mb-2"></p>
+                        <img id="icon36" class="mr-auto" src="http://openweathermap.org/img/w/01n.png" alt="weather icon">
+                        <p>Temp: <span id="temp5"></span>&deg; F</p>
+                        <p>Humidity: <span id="humidity5"></span>%</p>
+                    </div>
+                </div>
+            </div>
         
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2>City: <span id="city"></span></h2>
-                <h2>Main Weather: <span id="main_weather"></span></h2>
-                <h2>Description: <span id="description_weather"></span></h2>
-                <img id="weather_image" src="">
-                <h2>Temperature: <span id="temperature"></span></h2>
-                    <button id="converttoCelsius">Celsius</button>
-                    <button id="convertToFahrenheit">Fahrenheit</button>
-                <h2>Pressure: <span id="pressure"></span></h2>
-                <h2>Humidity: <span id="humidity"></span></h2>
-            </div>
-        </div>
-    </div>
+    <ul class="list" ></ul>
+  
         
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
